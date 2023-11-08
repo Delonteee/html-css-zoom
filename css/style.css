@@ -21,17 +21,22 @@ html {
     margin: 0 auto;
 }
 
-img {
-    width: 100%;
+.margin-sx-dx-3 {
+    margin-left: 3%;
+    margin-right: 3%;
 }
 
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
 
 /*
     HEADER
 */
 
 header {
-    height: 60px;
+    height: 8vh;
     background-color: black;
     position: relative;
 
@@ -40,8 +45,7 @@ header {
 .header-buttons {
     position: absolute;
     right: 4px;
-    top:    ;
-
+    top: 4px;
 }
 
 .header-buttons button {
@@ -56,6 +60,52 @@ header {
     MAIN
 */
 
+main { 
+    background-color: black;
+    padding-bottom: 40px;
+}
+
+.cam-container {
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+}
+
+.cam-container .cam {
+    width: calc((100% / 7 ) - 20px);
+    height: 120px;
+    margin: 10px;
+    position: relative;
+}
+
+.cam-container .cam img {
+    display: block; 
+    width: 100%;
+    object-fit: cover;
+}
+
+.cam-container .cam p {
+    color: white;
+    background-color: rgba(211, 211, 211, 0.452);
+    border: 1px solid transparent;
+    padding: 2px 4px;
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+}
 /*
     FOOTER
 */
+
+footer .full-width-container{
+    height: 12vh;
+    background-color: #222222;
+}
+
+/*
+    DEBUG
+*/
+
